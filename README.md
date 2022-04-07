@@ -1,1 +1,1 @@
-This is my configuration of the xmouseless package
+This is my vim-like configuration of the xmouseless package.
