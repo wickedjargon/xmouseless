@@ -1,0 +1,54 @@
+
+config.h,424
+static const unsigned int move_rate 4,76
+static const unsigned int default_speed 8,188
+static SpeedBinding speed_bindings[speed_bindings11,281
+static MoveBinding move_bindings[move_bindings21,553
+static ClickBinding click_bindings[click_bindings32,794
+static ScrollBinding scroll_bindings[scroll_bindings43,1079
+static ShellBinding shell_bindings[shell_bindings54,1378
+static KeySym exit_keys[exit_keys62,1621
+
+xmouseless.c,1032
+#define LENGTH(14,205
+    KeySym keysym;18,269
+    float x;19,288
+    float y;20,301
+} MoveBinding;21,314
+    KeySym keysym;24,347
+    unsigned int button;25,366
+} ClickBinding;26,391
+    KeySym keysym;29,425
+    float x;30,444
+    float y;31,457
+} ScrollBinding;32,470
+    KeySym keysym;35,505
+    unsigned int speed;36,524
+} SpeedBinding;37,548
+    KeySym keysym;40,582
+    char *command;command41,601
+} ShellBinding;42,620
+Display *dpy;dpy48,684
+Window root;49,698
+pthread_t movethread;50,711
+static unsigned int speed;52,734
+    float x;55,771
+    float y;56,784
+    float speed_x;57,797
+    float speed_y;58,816
+} mouseinfo;59,835
+    float x;62,858
+    float y;63,871
+    float speed_x;64,884
+    float speed_y;65,903
+} scrollinfo;66,922
+void get_pointer(79,1195
+void move_relative(89,1397
+void click(97,1597
+void click_full(102,1728
+void scroll(108,1897
+void init_x(129,2344
+void close_x(156,2943
+void *move_forever(move_forever164,3133
+void handle_key(181,3748
+int main 251,6059
