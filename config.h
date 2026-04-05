@@ -30,12 +30,13 @@ static MoveBinding move_bindings[] = {
  * 2: middle
  * 3: right */
 static ClickBinding click_bindings[] = {
-    /* key         button */  
-    /* { XK_Space,    1 }, */
-    /* { XK_Return,     1 }, */
-    { XK_g,     1 },
-    { XK_F10,        2 },
-    { XK_space,        3 },
+    /* key         button */
+    { XK_space,    1 },
+    { XK_Return,   1 },
+    { XK_Left,     1 },
+    { XK_Right,    3 },
+    { XK_Up,     2 },
+    { XK_Down,     2 },
 };
 
 /* scrolls up, down, left and right
@@ -44,7 +45,7 @@ static ScrollBinding scroll_bindings[] = {
     /* key        x      y */
     { XK_n,        0 ,    25 },
     { XK_p,        0 ,   -25 },
-    { XK_plus,     0 ,    80 },
+    { XK_equal,    0 ,    80 },
     { XK_minus,    0 ,   -80 },
     { XK_9,        25,    0  },
     { XK_0,       -25,    0  },
