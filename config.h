@@ -43,10 +43,8 @@ static ClickBinding click_bindings[] = {
  * a higher value scrolls faster */
 static ScrollBinding scroll_bindings[] = {
     /* key        x      y */
-    { XK_n,        0 ,    25 },
-    { XK_p,        0 ,   -25 },
-    { XK_equal,    0 ,    80 },
-    { XK_minus,    0 ,   -80 },
+    { XK_equal,    0 ,    25 },
+    { XK_minus,    0 ,   -25 },
     { XK_9,        25,    0  },
     { XK_0,       -25,    0  },
 };
@@ -61,7 +59,7 @@ static ShellBinding shell_bindings[] = {
 
 /* exits on key release which allows click and exit with one key */
 static KeySym exit_keys[] = {
-  XK_Escape, XK_q
+  XK_Escape, XK_q, XK_Return
 };
 
 
